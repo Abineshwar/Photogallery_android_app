@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/et_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/b_go"
+        android:layout_marginStart="23dp"
+        android:contentDescription="@string/et_search"
+        android:ems="10"
+        android:hint="Search Keyword"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/b_go"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="38dp"
+        android:contentDescription="@string/b_go"
+        android:text="Go"
+        tools:layout_editor_absoluteX="252dp"
+        tools:layout_editor_absoluteY="35dp" />
+
+    <ImageView
+        android:id="@+id/iv_main"
+        android:layout_width="306dp"
+        android:layout_height="321dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="139dp"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <ImageView
+        android:id="@+id/iv_previous"
+        android:layout_width="82dp"
+        android:layout_height="103dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/et_search"
+        app:srcCompat="@drawable/prev" />
+
+    <ImageView
+        android:id="@+id/iv_next"
+        android:layout_width="82dp"
+        android:layout_height="103dp"
+        android:layout_alignEnd="@+id/b_go"
+        android:layout_alignParentBottom="true"
+        app:srcCompat="@drawable/next" />
+
+    <!--Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/b_go"
+        android:layout_marginStart="23dp" /-->
+
+</RelativeLayout>
